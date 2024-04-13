@@ -1,0 +1,218 @@
+* {
+
+padding: 0;
+margin: 0;
+
+}
+
+nav{
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 1rem;
+}
+
+
+ul{
+
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+
+
+}
+
+.list{
+     display: none;
+}
+
+
+
+main{
+
+    display: flex;
+    width: 70%;
+    margin:  4rem auto;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.title-section h1{
+    font-size: 4rem; 
+    background-image: url('https://freight.cargo.site/t/original/i/b6d4aded23819dee7428c893d0570c345c535583f4e83b1e6e085b9ae974f715/EHC-patterns.gif');
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.title-section p{
+ 
+    color: grey;
+    line-height: 2;
+}
+
+.title-section button{
+ 
+  background-color: teal;
+  padding: 0.5rem 2rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+
+.image-section img{
+    width: 100%;
+}
+
+.title-section {
+    width: 100%;
+}
+
+.image-section {
+    width: 60%;
+}
+
+
+.cards{
+
+ display: flex;
+ width: 70%;
+ margin:auto;
+ gap: 2rem;
+
+
+
+
+
+}
+
+.cards img{
+
+    clip-path: circle();
+    margin-top: -5rem;
+}
+
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 10px 2px  rgb(95, 95, 95) ;
+    border-radius: 10px;
+
+}
+
+
+
+@media only screen and (max-width:1035px){
+
+
+main{
+    width: 90%;
+}
+
+
+
+ .cards{
+
+  width: 90%;
+
+
+ }
+
+
+ .cards img{
+
+     margin-top: 0;
+
+ }
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:877px){
+
+.cards{
+
+    flex-direction: column;
+}
+
+
+.cards img{
+    
+    margin-top: 0;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+ 
+     nav ul,nav button{
+
+        display: none;
+     }
+
+
+     .list{
+        display: block;
+     }
+
+
+    .title-section h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .title-section {
+   
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+
+
+
+
+
+     main{
+
+  flex-direction: column;
+
+     }
+
+
+}
